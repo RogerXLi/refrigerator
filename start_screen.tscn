@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkjlceksr8shn"]
+
+[ext_resource type="Script" path="res://start_screen.gd" id="1_1kfyh"]
+
+[node name="StartScreen" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 459.0
+offset_top = 414.0
+offset_right = 499.0
+offset_bottom = 454.0
+script = ExtResource("1_1kfyh")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 6.325
+anchor_bottom = 2.325
+offset_right = -1.52588e-05
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]

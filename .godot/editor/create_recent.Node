@@ -1,5 +1,7 @@
-Timer
+Button
+Control
 Node
+Timer
 CollisionShape2D
 AnimatedSprite2D
 Area2D
