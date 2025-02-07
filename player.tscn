@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://fa6lh2lmtmat"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5tvby"]
+
+[node name="Player" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5tvby")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="Node3" type="Node" parent="."]
