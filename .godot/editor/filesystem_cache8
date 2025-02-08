@@ -1,4 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738885222
+::res://::1739046366
+button.gd::GDScript::-1::1738910652::0::1::::<>Button<>::
+circle.png::CompressedTexture2D::2429871082574333546::1739046366::1739046367::1::::<><>::
 icon.svg::CompressedTexture2D::3608172183577942602::1738885176::1738885224::1::::<><>::
+main.gd::GDScript::-1::1738906887::0::1::::<>Node<>::
+main.tscn::PackedScene::7665206516375138794::1738906892::0::1::::<><>::res://main.gd<>uid://fa6lh2lmtmat::::res://player.tscn
+player.tscn::PackedScene::352846498588632763::1738906568::0::1::::<><>::
 README.md::TextFile::-1::1738885176::0::1::::<><>::
+rect.jpg::CompressedTexture2D::4495067074690581940::1739046200::1739046207::1::::<><>::
+start_screen.gd::GDScript::-1::1738911082::0::1::::<>Control<>::
+start_screen.tscn::PackedScene::7880401572137724059::1738912181::0::1::::<><>::res://start_screen.gd

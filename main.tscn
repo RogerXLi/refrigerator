@@ -1,11 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhhc3jej3pwji"]
+[gd_scene load_steps=6 format=3 uid="uid://dhhc3jej3pwji"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_xxmq5"]
 [ext_resource type="PackedScene" uid="uid://fa6lh2lmtmat" path="res://player.tscn" id="2_aopgq"]
+[ext_resource type="Texture2D" uid="uid://b5bpdljdytsum" path="res://rect.jpg" id="3_6ibi0"]
+[ext_resource type="Script" path="res://player.gd" id="4_msxgg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_irpxi"]
+size = Vector2(390, 75)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_xxmq5")
 
+[node name="Platform" type="Node2D" parent="."]
+
+[node name="Platform1" type="StaticBody2D" parent="Platform"]
+position = Vector2(69, 33)
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform/Platform1"]
+position = Vector2(430, 288)
+scale = Vector2(0.625556, 0.590741)
+texture = ExtResource("3_6ibi0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform/Platform1"]
+position = Vector2(445, 270.5)
+shape = SubResource("RectangleShape2D_irpxi")
+
 [node name="Player" parent="." instance=ExtResource("2_aopgq")]
+position = Vector2(375, 140)
+script = ExtResource("4_msxgg")
 
 [node name="Timer" type="Timer" parent="."]

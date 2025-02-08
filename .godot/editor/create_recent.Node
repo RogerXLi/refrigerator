@@ -1,7 +1,11 @@
+CharacterBody2D
+Sprite2D
+CollisionShape2D
+StaticBody2D
+Node2D
 Button
 Control
 Node
 Timer
-CollisionShape2D
 AnimatedSprite2D
 Area2D

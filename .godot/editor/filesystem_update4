@@ -1,6 +1,3 @@
-res://player.tscn
-res://main.gd
 res://main.tscn
-res://start_screen.tscn
-res://button.gd
-res://start_screen.gd
+res://player.tscn
+res://player.gd
