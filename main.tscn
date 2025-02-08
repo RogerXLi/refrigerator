@@ -15,6 +15,7 @@ script = ExtResource("1_xxmq5")
 
 [node name="Platform1" type="StaticBody2D" parent="Platform"]
 position = Vector2(69, 33)
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Platform/Platform1"]
 position = Vector2(430, 288)
@@ -25,8 +26,47 @@ texture = ExtResource("3_6ibi0")
 position = Vector2(445, 270.5)
 shape = SubResource("RectangleShape2D_irpxi")
 
+[node name="Platform2" type="StaticBody2D" parent="Platform"]
+position = Vector2(527, 211)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform/Platform2"]
+position = Vector2(430, 288)
+scale = Vector2(0.625556, 0.590741)
+texture = ExtResource("3_6ibi0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform/Platform2"]
+position = Vector2(445, 270.5)
+shape = SubResource("RectangleShape2D_irpxi")
+
+[node name="Platform3" type="StaticBody2D" parent="Platform"]
+position = Vector2(1047, 98)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform/Platform3"]
+position = Vector2(430, 288)
+scale = Vector2(0.625556, 0.590741)
+texture = ExtResource("3_6ibi0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform/Platform3"]
+position = Vector2(445, 270.5)
+shape = SubResource("RectangleShape2D_irpxi")
+
+[node name="Platform4" type="StaticBody2D" parent="Platform"]
+position = Vector2(1549, 582)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform/Platform4"]
+position = Vector2(430, 288)
+scale = Vector2(0.625556, 0.590741)
+texture = ExtResource("3_6ibi0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform/Platform4"]
+position = Vector2(445, 270.5)
+shape = SubResource("RectangleShape2D_irpxi")
+
 [node name="Player" parent="." instance=ExtResource("2_aopgq")]
-position = Vector2(375, 140)
+position = Vector2(428, 267)
 script = ExtResource("4_msxgg")
 
 [node name="Timer" type="Timer" parent="."]

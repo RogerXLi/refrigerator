@@ -5,7 +5,7 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_5tvby"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bpyvl"]
-radius = 97.0052
+radius = 45.1221
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(302, 271)
@@ -15,10 +15,13 @@ metadata/_edit_group_ = true
 sprite_frames = SubResource("SpriteFrames_5tvby")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(5, 8)
-scale = Vector2(0.27625, 0.27625)
+position = Vector2(-54.25, -51.25)
+scale = Vector2(0.128125, 0.128125)
 texture = ExtResource("1_ex0s0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5, 8)
+position = Vector2(-55, -51)
 shape = SubResource("CircleShape2D_bpyvl")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
